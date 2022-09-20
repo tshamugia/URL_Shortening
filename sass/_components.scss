@@ -1,0 +1,232 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.nav-bar{
+    display: flex;
+    
+    h2{
+        color: var(--color-neutral-4);
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    ul{
+        display: flex;
+        align-items: center;
+        margin-left: 3rem;
+        font-weight: 700;
+
+        li{
+            margin-right: 1rem;
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: var(--color-neutral-1);
+                padding: 1rem;
+            }
+        }
+    }
+    
+}
+
+.auth{
+    max-width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    
+    :first-child{
+        margin-right: 2rem;
+    }
+
+    :last-child{
+        background-color: var(--color-primary-1);
+        color: white;
+
+    }
+    button{
+        color: var(--color-neutral-1);
+        background-color: white;
+        border: none;
+        border-radius: 1.7rem;
+        font-weight: 700;
+        height: 2.3rem;
+        width: 6rem;
+        cursor: pointer;
+
+    }
+
+}
+
+.main--section-1{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6rem;
+    
+   
+
+    h1{
+        color: var(--color-neutral-4);
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 5rem;
+         
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 1.3rem;
+        display: inline-block;
+        max-width: 35rem;
+    }
+
+    button{
+        margin-top: 2rem;
+        color: var(--color-neutral-1);
+        background-color: white;
+        border: none;
+        border-radius: 1.7rem;
+        font-weight: 700;
+        font-size: 1rem;
+        height: 2.7rem;
+        width: 9rem;
+        cursor: pointer;
+        background-color: var(--color-primary-1);
+        color: white;
+        
+
+    }
+
+}
+
+
+.shorten--input{
+    width: 60rem;
+    margin-right: 2rem;
+    border-radius: 0.4rem;
+    height: 3rem;
+    text-align: start;
+    padding: 1rem;
+
+    &::placeholder{
+        color: var(--color-neutral-2);
+        font-weight: 500;
+
+    }
+    
+}
+
+.shorten--button{
+        color: var(--color-neutral-1);
+        background-color: white;
+        border: none;
+        border-radius: 0.4rem;
+        font-weight: 700;
+        font-size: 1rem;
+        height: 3rem;
+        width: 9rem;
+        cursor: pointer;
+        background-color: var(--color-primary-1);
+        color: white;
+
+}
+
+.position{
+    position: relative;
+}
+
+.wrapper{
+    background-color:azure;
+}
+
+.card{
+    max-width: 25rem;
+    max-height: 15rem;
+    font-size: 0.8rem;
+    position: relative;
+    background-color:white;
+    padding: 1rem;
+    text-align:start;
+    
+
+    .brand{
+        background-color: var(--color-neutral-4);
+        max-width: 4rem;
+        min-height: 4rem;
+        text-align: center;
+        border-radius: 4rem;
+        padding: 0.2rem;
+        position: relative;
+        top:-3rem;
+
+        img{
+            width: 1.8rem;
+            margin-top:0.8rem;
+        }
+    }
+
+    h3{
+        font-weight: 700;
+        color: var(--color-neutral-4);
+        margin-bottom: 1rem;
+    }
+}
+
+.line{
+    position: absolute;
+    width: 100%;
+    min-height: 0.6rem;
+    background-color:var(--color-primary-1);
+    top: 7rem
+}
+
+.card--1{
+    align-self: flex-start;
+}
+
+.card--2{
+    align-self: center;
+}
+
+.card--3{
+    align-self: flex-end;
+}
+
+
+.boost--wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+    margin: 0 auto;
+
+    p{
+        color: white;
+        font-weight: 700;
+        font-size: 1.5rem;
+        
+    }
+
+    .boost--button{
+        color: var(--color-neutral-1);
+        background-color: white;
+        border: none;
+        border-radius: 1rem;
+        font-weight: 700;
+        font-size: 1rem;
+        height: 2.5rem;
+        width: 9rem;
+        cursor: pointer;
+        background-color: var(--color-primary-1);
+        color: white;
+        margin-top: 1rem;
+    }
+
+   
+}
