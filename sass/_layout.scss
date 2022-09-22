@@ -86,10 +86,8 @@
    min-height: 15rem;
    display: flex;
    justify-content: space-evenly;
-   border: 1px solid red;
-    
+   background-color: var(--color-neutral-4);
+   padding-top: 2rem;
+
 }
 
-.attribution{
-    margin: 0;
-}
