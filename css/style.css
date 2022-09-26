@@ -2,7 +2,7 @@
   --color-primary-1: hsl(180, 66%, 49%);
   --color-primary-2: hsl(257, 27%, 26%);
   --color-secondary: hsl(0, 87%, 67%);
-  --color-neutral-1:hsl(0, 0%, 75%);
+  --color-neutral-1: hsl(0, 0%, 75%);
   --color-neutral-2: hsl(257, 7%, 63%);
   --color-neutral-3: hsl(255, 11%, 22%);
   --color-neutral-4: hsl(260, 8%, 14%); }
@@ -18,42 +18,40 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px; }
+  font-size: 62.5%; }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   line-height: 1.6;
   min-height: 100vh;
-  color: var(--color-neutral-1); }
+  color: var(--color-neutral-1);
+  font-size: 16px; }
 
 .container {
-  max-width: 110rem;
+  max-width: 90rem;
   margin: 0 auto;
-  margin-top: 2rem;
-  padding-left: 10rem; }
+  margin-top: 2rem; }
 
 .header {
   height: 5rem;
   margin: 0 auto;
   margin-top: 1rem;
-  max-width: 80rem; }
+  max-width: 90rem; }
 
 .main {
-  margin-bottom: 8rem;
-  min-height: 25rem;
-  display: flex;
-  justify-content: space-between; }
+  margin-bottom: 4rem;
+  max-width: 90rem;
+  display: flex; }
 
 .shorten {
-  position: absolute;
-  top: 38rem;
-  left: 20rem;
+  position: relative;
+  z-index: 10;
   display: flex;
   justify-content: center;
   padding: 3rem;
   margin: 0;
-  max-width: 80rem;
+  max-width: 90rem;
   margin: 0 auto;
   min-height: 7rem;
   margin-top: 4rem;
@@ -123,6 +121,8 @@ body {
         text-decoration: none;
         color: var(--color-neutral-1);
         padding: 1rem; }
+        .nav-bar ul li a:hover {
+          color: var(--color-primary-2); }
 
 .auth {
   max-width: 15rem;
@@ -130,6 +130,8 @@ body {
   justify-content: space-between; }
   .auth :first-child {
     margin-right: 2rem; }
+    .auth :first-child:hover {
+      color: var(--color-primary-2); }
   .auth :last-child {
     background-color: var(--color-primary-1);
     color: white; }
@@ -139,35 +141,37 @@ body {
     border: none;
     border-radius: 1.7rem;
     font-weight: 700;
-    height: 2.3rem;
-    width: 6rem;
+    height: 3rem;
+    width: 8rem;
     cursor: pointer; }
+
+.main--section-2 {
+  max-width: 40rem; }
 
 .main--section-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 6rem; }
+  max-width: 50rem; }
   .main--section-1 h1 {
     color: var(--color-neutral-4);
-    font-size: 4.5rem;
+    font-size: 5rem;
     font-weight: 700;
-    line-height: 5rem; }
+    line-height: 5rem;
+    margin-bottom: 2rem; }
   .main--section-1 p {
     font-weight: 500;
-    font-size: 1.3rem;
-    display: inline-block;
-    max-width: 35rem; }
+    font-size: 1.8rem; }
   .main--section-1 button {
-    margin-top: 2rem;
+    margin-top: 4rem;
     color: var(--color-neutral-1);
     background-color: white;
     border: none;
     border-radius: 1.7rem;
     font-weight: 700;
-    font-size: 1rem;
-    height: 2.7rem;
-    width: 9rem;
+    font-size: 1.4rem;
+    height: 4rem;
+    width: 12rem;
     cursor: pointer;
     background-color: var(--color-primary-1);
     color: white; }
@@ -176,7 +180,7 @@ body {
   width: 60rem;
   margin-right: 2rem;
   border-radius: 0.4rem;
-  height: 3rem;
+  height: 4rem;
   text-align: start;
   padding: 1rem; }
   .shorten--input::placeholder {
@@ -189,9 +193,9 @@ body {
   border: none;
   border-radius: 0.4rem;
   font-weight: 700;
-  font-size: 1rem;
-  height: 3rem;
-  width: 9rem;
+  font-size: 1.5rem;
+  height: 4rem;
+  width: 12rem;
   cursor: pointer;
   background-color: var(--color-primary-1);
   color: white; }
@@ -200,7 +204,8 @@ body {
   position: relative; }
 
 .wrapper {
-  background-color: azure; }
+  background-color: azure;
+  margin-top: -50px; }
 
 .card {
   max-width: 25rem;
@@ -234,6 +239,12 @@ body {
   background-color: var(--color-primary-1);
   top: 7rem; }
 
+.card h3 {
+  font-size: 14px; }
+
+.card p {
+  font-size: 10px; }
+
 .card--1 {
   align-self: flex-start; }
 
@@ -252,20 +263,58 @@ body {
   .boost--wrapper p {
     color: white;
     font-weight: 700;
-    font-size: 1.5rem; }
+    font-size: 16px; }
   .boost--wrapper .boost--button {
     color: var(--color-neutral-1);
     background-color: white;
     border: none;
     border-radius: 1rem;
     font-weight: 700;
-    font-size: 1rem;
-    height: 2.5rem;
-    width: 9rem;
+    font-size: 16px;
+    height: 4rem;
+    width: 12rem;
     cursor: pointer;
     background-color: var(--color-primary-1);
     color: white;
     margin-top: 1rem; }
+
+.footer--nav .icon {
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  margin-right: 1rem; }
+
+.footer--nav .icon-facebook {
+  background-image: url("/images/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer; }
+  .footer--nav .icon-facebook:hover {
+    background-color: var(--color-primary-1); }
+
+.footer--nav .icon-instagram {
+  background-image: url("/images/icon-instagram.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer; }
+  .footer--nav .icon-instagram:hover {
+    background-color: var(--color-primary-1); }
+
+.footer--nav .icon-twitter {
+  background-image: url("/images/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer; }
+  .footer--nav .icon-twitter:hover {
+    background-color: var(--color-primary-1); }
+
+.footer--nav .icon-pinterest {
+  background-image: url("/images/icon-pinterest.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer; }
+  .footer--nav .icon-pinterest:hover {
+    background-color: var(--color-primary-1); }
 
 .footer--nav h3 {
   margin-bottom: 1rem; }
@@ -274,12 +323,16 @@ body {
   list-style: none; }
 
 .footer--nav a {
-  margin-right: 1rem; }
+  margin-right: 1rem;
+  text-decoration: none;
+  color: var(--color-neutral-1); }
+  .footer--nav a:hover {
+    color: var(--color-primary-1); }
 
 .attribution {
   margin: 0;
   text-align: center;
-  font-size: 1rem;
+  font-size: 16px;
   padding: 0.5rem; }
   .attribution a {
     text-decoration: none;

@@ -1,0 +1,19 @@
+.container {
+  border: 1px solid red;
+  max-width: 80rem;
+  margin-inline: auto;
+  min-height: 60vh;
+}
+
+.header {
+  border: 1px solid green;
+  max-width: 50rem;
+  margin: 2rem auto;
+
+  @media only screen and(max-width: 600px) {
+    font-size: 12px;
+  }
+  @media only screen and(max-width: 840px) {
+    margin: 2rem 20%;
+  }
+}

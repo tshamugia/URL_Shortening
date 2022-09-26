@@ -4,7 +4,8 @@
   "description": "URL shortening ",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:test": "node-sass sass/test.scss css/test.css -w"
   },
   "author": "",
   "license": "ISC",
