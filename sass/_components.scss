@@ -20,6 +20,10 @@
     margin-left: 3rem;
     font-weight: 700;
 
+    @media only screen and(max-width: 600px) {
+      display: none;
+    }
+
     li {
       margin-right: 1rem;
       list-style: none;
@@ -42,6 +46,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media only screen and(max-width: 600px) {
+    display: none;
+  }
+
   :first-child {
     margin-right: 2rem;
 
@@ -50,7 +58,7 @@
     }
   }
 
-  :last-child {
+  :nth-child(2) {
     background-color: var(--color-primary-1);
     color: white;
   }
@@ -66,8 +74,106 @@
   }
 }
 
+.nav-btn {
+  display: none;
+  border: none;
+  border-radius: 0;
+
+  background-color: var(--color-neutral-4);
+  height: 2px;
+  width: 4rem;
+
+  @media only screen and(max-width: 600px) {
+    display: block;
+  }
+
+  &::before,
+  &::after {
+    background-color: var(--color-neutral-4);
+    height: 2px;
+    width: 4rem;
+    content: "";
+    display: block;
+  }
+
+  &::before {
+    transform: translateY(-1.5rem);
+  }
+  &::after {
+    transform: translateY(1.5rem);
+  }
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  align-items: center;
+  background-color: var(--color-primary-2);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-inline: auto;
+
+  :hover {
+    color: var(--color-primary-1);
+  }
+
+  &--first {
+    border-bottom: 1px solid rgb(94, 92, 92);
+    width: 100%;
+    padding: 1rem;
+  }
+
+  &--second {
+    padding: 1rem;
+    width: 100%;
+
+    .active {
+      background-color: var(--color-primary-1);
+      border-radius: 4rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #74f0f0;
+      }
+    }
+  }
+
+  li {
+    list-style: none;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 700;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
 .main--section-2 {
   max-width: 40rem;
+  @media only screen and(max-width: 630px) {
+    max-width: 60rem;
+    margin-inline: auto;
+  }
+
+  img {
+    @media only screen and(max-width: 1540px) {
+      max-width: 500px;
+      max-height: 500px;
+    }
+    @media only screen and(max-width: 1080px) {
+      max-width: 400px;
+      max-height: 400px;
+    }
+    @media only screen and(max-width: 750px) {
+      max-width: 350px;
+      max-height: 350px;
+    }
+  }
 }
 
 .main--section-1 {
@@ -76,17 +182,42 @@
   justify-content: center;
   max-width: 50rem;
 
+  @media only screen and(max-width: 630px) {
+    max-width: 50rem;
+    align-items: center;
+    text-align: center;
+  }
+
   h1 {
     color: var(--color-neutral-4);
     font-size: 5rem;
     font-weight: 700;
     line-height: 5rem;
     margin-bottom: 2rem;
+
+    @media only screen and(max-width: 800px) {
+      font-size: 4rem;
+    }
+    @media only screen and(max-width: 700px) {
+      font-size: 3rem;
+    }
   }
 
   p {
     font-weight: 500;
     font-size: 1.8rem;
+
+    @media only screen and(max-width: 800px) {
+      font-size: 1.4rem;
+    }
+    @media only screen and(max-width: 700px) {
+      font-size: 1.2rem;
+    }
+
+    @media only screen and(max-width: 630px) {
+      display: inline-block;
+      max-width: 40rem;
+    }
   }
 
   button {
@@ -102,11 +233,16 @@
     cursor: pointer;
     background-color: var(--color-primary-1);
     color: white;
+
+    &:hover {
+      background-color: #74f0f0;
+    }
   }
 }
 
 .shorten--input {
-  width: 60rem;
+  max-width: 60rem;
+  width: 100%;
   margin-right: 2rem;
   border-radius: 0.4rem;
   height: 4rem;
@@ -127,14 +263,28 @@
   font-weight: 700;
   font-size: 1.5rem;
   height: 4rem;
-  width: 12rem;
+  max-width: 20rem;
+  width: 100%;
   cursor: pointer;
   background-color: var(--color-primary-1);
   color: white;
+
+  &:hover {
+    background-color: #74f0f0;
+  }
+
+  @media only screen and(max-width: 630px) {
+    max-width: 60rem;
+    width: 100%;
+  }
 }
 
 .position {
   position: relative;
+
+  @media only screen and(max-width: 950px) {
+    margin-inline: 2rem;
+  }
 }
 
 .wrapper {
@@ -161,6 +311,10 @@
     position: relative;
     top: -3rem;
 
+    @media only screen and(max-width: 600px) {
+      left: 45%;
+    }
+
     img {
       width: 1.8rem;
       margin-top: 0.8rem;
@@ -180,6 +334,14 @@
   min-height: 0.6rem;
   background-color: var(--color-primary-1);
   top: 7rem;
+
+  @media only screen and(max-width: 600px) {
+    display: flex;
+    transform: rotate(90deg);
+    max-width: 40rem;
+    align-self: center;
+    top: 20rem;
+  }
 }
 
 .card {
@@ -189,6 +351,14 @@
 
   p {
     font-size: 10px;
+  }
+  @media only screen and(max-width: 600px) {
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
   }
 }
 
@@ -202,6 +372,24 @@
 
 .card--3 {
   align-self: flex-end;
+}
+
+@media only screen and(max-width: 600px) {
+  .card--1 {
+    align-self: center;
+    margin-bottom: 4rem;
+    max-width: 40rem;
+  }
+  .card--2 {
+    align-self: center;
+    margin-bottom: 4rem;
+    max-width: 40rem;
+  }
+  .card--3 {
+    align-self: center;
+    margin-bottom: 4rem;
+    max-width: 40rem;
+  }
 }
 
 .boost--wrapper {
@@ -230,15 +418,36 @@
     background-color: var(--color-primary-1);
     color: white;
     margin-top: 1rem;
+
+    &:hover {
+      background-color: #74f0f0;
+    }
   }
 }
 
 .footer--nav {
+  h3 {
+    color: white;
+  }
+  @media only screen and(max-width: 600px) {
+    max-width: 40rem;
+    width: 100%;
+
+    h3 {
+      padding: 2rem;
+      color: white;
+    }
+  }
+
   .icon {
     width: 2rem;
     height: 2rem;
     display: inline-block;
     margin-right: 1rem;
+
+    @media only screen and(max-width: 600px) {
+      margin: 2rem 1rem 2rem 0;
+    }
   }
 
   .icon-facebook {
@@ -310,6 +519,14 @@
   text-align: center;
   font-size: 16px;
   padding: 0.5rem;
+
+  @media only screen and(max-width: 600px) {
+    font-size: 10px;
+  }
+
+  @media only screen and(max-width: 300px) {
+    font-size: 8px;
+  }
 
   a {
     text-decoration: none;
