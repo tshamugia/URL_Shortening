@@ -6,10 +6,12 @@
     <!-- displays site properly based on user's device -->
 
     <link rel="stylesheet" href="css/style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="/index.js" defer></script>
 
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
@@ -69,7 +71,7 @@
           </section>
 
           <section class="main--section-2">
-            <img src="/images/illustration-working.svg" />
+            <img alt="illustration" src="/images/illustration-working.svg" />
           </section>
         </main>
       </main>
@@ -79,12 +81,23 @@
           class="shorten--input"
           aria-label="input"
           placeholder="Shorten a link here..."
+          type="text"
+          id="shorten--input"
         />
 
         <button class="shorten--button">Shorten It!</button>
       </section>
 
       <div class="wrapper">
+        <div class="shorten-wrapper">
+          <div class="shortened">
+            <div class="shortened--link">Link</div>
+            <div class="shortened--result">
+              <div class="generated-link">geneated</div>
+              <button class="copy-btn">Copy</button>
+            </div>
+          </div>
+        </div>
         <section class="advanced">
           <h2>Advanced Statistics</h2>
 

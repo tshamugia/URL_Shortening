@@ -48,6 +48,13 @@ body {
     .main {
       flex-direction: column-reverse; } }
 
+.shorten-wrapper {
+  position: relative;
+  z-index: 15;
+  padding-top: 5rem;
+  max-height: 10rem;
+  height: 100%; }
+
 .shorten {
   position: relative;
   z-index: 10;
@@ -161,6 +168,8 @@ body {
   .auth :nth-child(2) {
     background-color: var(--color-primary-1);
     color: white; }
+    .auth :nth-child(2):hover {
+      background-color: #74f0f0; }
   .auth button {
     color: var(--color-neutral-1);
     background-color: white;
@@ -193,7 +202,7 @@ body {
     transform: translateY(1.5rem); }
 
 .mobile-nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   max-width: 50rem;
   align-items: center;
@@ -202,6 +211,9 @@ body {
   padding: 2rem;
   margin-top: 2rem;
   margin-inline: auto; }
+  @media only screen and (max-width: 600px) {
+    .mobile-nav {
+      display: flex; } }
   .mobile-nav :hover {
     color: var(--color-primary-1); }
   .mobile-nav--first {
@@ -308,6 +320,9 @@ body {
     color: var(--color-neutral-2);
     font-weight: 500; }
 
+.shorten-hide {
+  display: none; }
+
 .shorten--button {
   color: var(--color-neutral-1);
   background-color: white;
@@ -327,6 +342,36 @@ body {
     .shorten--button {
       max-width: 60rem;
       width: 100%; } }
+
+.shortened {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  max-width: 90rem;
+  margin: 2rem auto;
+  height: 5rem;
+  border-radius: 1rem;
+  align-items: center; }
+  .shortened .generated-link {
+    color: var(--color-primary-1); }
+  .shortened--result {
+    display: flex;
+    gap: 2rem;
+    align-items: center; }
+    .shortened--result .copy-btn {
+      color: var(--color-neutral-1);
+      background-color: white;
+      border: none;
+      border-radius: 0.4rem;
+      font-weight: 700;
+      font-size: 1.5rem;
+      height: 3.5rem;
+      width: 10rem;
+      cursor: pointer;
+      background-color: var(--color-primary-1);
+      color: white; }
+      .shortened--result .copy-btn:hover {
+        background-color: #74f0f0; }
 
 .position {
   position: relative; }

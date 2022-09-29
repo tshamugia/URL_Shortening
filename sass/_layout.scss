@@ -23,6 +23,14 @@
   }
 }
 
+.shorten-wrapper {
+  position: relative;
+  z-index: 15;
+  padding-top: 5rem;
+  max-height: 10rem;
+  height: 100%;
+}
+
 .shorten {
   position: relative;
   z-index: 10;
