@@ -13,6 +13,8 @@
     />
     <script type="module" src="/index.js" defer></script>
 
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+
     <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -89,11 +91,11 @@
       </section>
 
       <div class="wrapper">
-        <div class="shorten-wrapper">
+        <div class="shorten-wrapper shorten-hide" id="shorten-wrapper">
           <div class="shortened">
-            <div class="shortened--link">Link</div>
+            <div class="shortened--link"></div>
             <div class="shortened--result">
-              <div class="generated-link">geneated</div>
+              <div class="generated-link"></div>
               <button class="copy-btn">Copy</button>
             </div>
           </div>

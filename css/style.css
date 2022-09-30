@@ -51,7 +51,7 @@ body {
 .shorten-wrapper {
   position: relative;
   z-index: 15;
-  padding-top: 5rem;
+  padding-top: 7rem;
   max-height: 10rem;
   height: 100%; }
 
@@ -352,6 +352,12 @@ body {
   height: 5rem;
   border-radius: 1rem;
   align-items: center; }
+  .shortened--link {
+    max-width: 60rem;
+    overflow: hidden;
+    white-space: nowrap;
+    max-height: 10rem;
+    padding: 2rem; }
   .shortened .generated-link {
     color: var(--color-primary-1); }
   .shortened--result {

@@ -302,6 +302,16 @@
   border-radius: 1rem;
   align-items: center;
 
+  &--link {
+    max-width: 60rem;
+    overflow: hidden;
+
+    white-space: nowrap;
+    max-height: 10rem;
+
+    padding: 2rem;
+  }
+
   .generated-link {
     color: var(--color-primary-1);
   }
