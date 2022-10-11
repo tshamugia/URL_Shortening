@@ -4,10 +4,14 @@ const baseURL = "https://api.shrtco.de/v2/shorten?url=";
 
 const userInput = document.querySelector(".shorten--input");
 const shortenBtn = document.querySelector(".shorten--button");
-const originalLink = document.querySelector(".shortened--link");
 const shortenWrapper = document.querySelector(".shorten-wrapper");
 const errorBox = document.querySelector(".errorBox");
 const navBtn = document.querySelector(".nav-btn");
+const mobileNav = document.querySelector("#mobileNav");
+
+navBtn.addEventListener("click", () => {
+  mobileNav.classList.toggle("show");
+});
 
 const store = [];
 

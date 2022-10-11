@@ -187,15 +187,16 @@ body {
   display: none;
   border: none;
   border-radius: 0;
+  cursor: pointer;
   background-color: var(--color-neutral-4);
-  height: 2px;
+  height: 3px;
   width: 4rem; }
   @media only screen and (max-width: 600px) {
     .nav-btn {
       display: block; } }
   .nav-btn::before, .nav-btn::after {
     background-color: var(--color-neutral-4);
-    height: 2px;
+    height: 3px;
     width: 4rem;
     content: "";
     display: block; }
@@ -205,12 +206,10 @@ body {
     transform: translateY(1.5rem); }
 
 .show {
-  display: flex; }
-
-.hide {
-  display: none; }
+  display: flex !important; }
 
 .mobile-nav {
+  display: none;
   flex-direction: column;
   max-width: 50rem;
   align-items: center;
