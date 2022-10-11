@@ -108,8 +108,15 @@
   }
 }
 
-.mobile-nav {
+.show {
+  display: flex;
+}
+
+.hide {
   display: none;
+}
+
+.mobile-nav {
   flex-direction: column;
   max-width: 50rem;
   align-items: center;
@@ -119,9 +126,8 @@
   margin-top: 2rem;
   margin-inline: auto;
 
-  @media only screen and(max-width: 600px) {
-    display: flex;
-  }
+  // @media only screen and(max-width: 600px) {
+  // }
 
   :hover {
     color: var(--color-primary-1);
@@ -263,6 +269,10 @@
   }
 }
 
+.error {
+  border: 2px solid red;
+}
+
 .shorten-hide {
   display: none;
 }
@@ -352,6 +362,7 @@
 .wrapper {
   background-color: azure;
   margin-top: -50px;
+  padding-bottom: 5rem;
 }
 
 .card {

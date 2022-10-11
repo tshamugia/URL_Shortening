@@ -52,8 +52,11 @@ body {
   position: relative;
   z-index: 15;
   padding-top: 7rem;
-  max-height: 10rem;
   height: 100%; }
+
+.errorBox {
+  color: red;
+  text-align: center; }
 
 .shorten {
   position: relative;
@@ -94,7 +97,7 @@ body {
   position: relative;
   max-width: 80rem;
   min-height: 16rem;
-  margin: 5rem auto; }
+  margin: 5rem auto 0; }
   @media only screen and (max-width: 600px) {
     .article {
       flex-direction: column; } }
@@ -201,8 +204,13 @@ body {
   .nav-btn::after {
     transform: translateY(1.5rem); }
 
+.show {
+  display: flex; }
+
+.hide {
+  display: none; }
+
 .mobile-nav {
-  display: none;
   flex-direction: column;
   max-width: 50rem;
   align-items: center;
@@ -211,9 +219,6 @@ body {
   padding: 2rem;
   margin-top: 2rem;
   margin-inline: auto; }
-  @media only screen and (max-width: 600px) {
-    .mobile-nav {
-      display: flex; } }
   .mobile-nav :hover {
     color: var(--color-primary-1); }
   .mobile-nav--first {
@@ -320,6 +325,9 @@ body {
     color: var(--color-neutral-2);
     font-weight: 500; }
 
+.error {
+  border: 2px solid red; }
+
 .shorten-hide {
   display: none; }
 
@@ -387,7 +395,8 @@ body {
 
 .wrapper {
   background-color: azure;
-  margin-top: -50px; }
+  margin-top: -50px;
+  padding-bottom: 5rem; }
 
 .card {
   max-width: 25rem;

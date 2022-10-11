@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap"
       rel="stylesheet"
     />
-    <script type="module" src="/index.js" defer></script>
 
     <script src="./node_modules/axios/dist/axios.min.js"></script>
 
@@ -43,7 +42,7 @@
         </nav>
 
         <!-- MOBILE NAV BAR -->
-        <div class="mobile-nav">
+        <div class="mobile-nav hide" id="mobileNav">
           <ul class="mobile-nav--first">
             <li><a href="/">Features</a></li>
             <li><a href="/">Pricing</a></li>
@@ -87,19 +86,13 @@
           id="shorten--input"
         />
 
-        <button class="shorten--button">Shorten It!</button>
+        <button type="button" class="shorten--button">Shorten It!</button>
       </section>
+      <div class="errorBox"></div>
 
       <div class="wrapper">
-        <div class="shorten-wrapper shorten-hide" id="shorten-wrapper">
-          <div class="shortened">
-            <div class="shortened--link"></div>
-            <div class="shortened--result">
-              <div class="generated-link"></div>
-              <button class="copy-btn">Copy</button>
-            </div>
-          </div>
-        </div>
+        <div class="shorten-wrapper" id="shorten-wrapper"></div>
+
         <section class="advanced">
           <h2>Advanced Statistics</h2>
 
@@ -209,5 +202,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Tengo Shamugia</a>.
     </div>
+    <script type="module" src="/index.js"></script>
+    <script type="module" src="/copy.js"></script>
   </body>
 </html>
