@@ -1,4 +1,6 @@
 "use strict";
+import "./copy.js";
+import axios from "axios";
 
 const baseURL = "https://api.shrtco.de/v2/shorten?url=";
 

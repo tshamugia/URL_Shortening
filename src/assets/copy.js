@@ -5,8 +5,8 @@ results.forEach((element) => {
   const btnCopy = element.querySelector(".copy-btn");
 
   btnCopy.addEventListener("click", async () => {
-    await navigator.clipboard.writeText(target.textContent);
-    const copied = await navigator.clipboard.readText();
+    await window.navigator["clipboard"].writeText(target.textContent);
+    const copied = await window.navigator["clipboard"].readText();
     console.log(copied);
   });
 });

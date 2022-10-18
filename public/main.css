@@ -1,3 +1,6 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss ***!
+  \*************************************************************************************************************/
 :root {
   --color-primary-1: hsl(180, 66%, 49%);
   --color-primary-2: hsl(257, 27%, 26%);
@@ -69,7 +72,7 @@ body {
   margin: 0 auto;
   min-height: 7rem;
   margin-top: 4rem;
-  background-image: url("/images/bg-shorten-desktop.svg");
+  background-image: url(images/bg-shorten-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--color-primary-2);
@@ -103,7 +106,7 @@ body {
       flex-direction: column; } }
 
 .boost {
-  background-image: url("/images/bg-boost-desktop.svg");
+  background-image: url(images/bg-boost-desktop.svg);
   background-color: var(--color-primary-2);
   background-repeat: no-repeat;
   background-size: cover;
@@ -521,7 +524,7 @@ body {
       margin: 2rem 1rem 2rem 0; } }
 
 .footer--nav .icon-facebook {
-  background-image: url("/images/icon-facebook.svg");
+  background-image: url(images/icon-facebook.svg);
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer; }
@@ -529,7 +532,7 @@ body {
     background-color: var(--color-primary-1); }
 
 .footer--nav .icon-instagram {
-  background-image: url("/images/icon-instagram.svg");
+  background-image: url(images/icon-instagram.svg);
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer; }
@@ -537,7 +540,7 @@ body {
     background-color: var(--color-primary-1); }
 
 .footer--nav .icon-twitter {
-  background-image: url("/images/icon-twitter.svg");
+  background-image: url(images/icon-twitter.svg);
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer; }
@@ -545,7 +548,7 @@ body {
     background-color: var(--color-primary-1); }
 
 .footer--nav .icon-pinterest {
-  background-image: url("/images/icon-pinterest.svg");
+  background-image: url(images/icon-pinterest.svg);
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer; }
@@ -579,3 +582,4 @@ body {
   .attribution a {
     text-decoration: none;
     color: var(--color-primary-2); }
+
