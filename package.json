@@ -6,7 +6,10 @@
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
     "dev-server": "webpack serve",
-    "build-dev": "webpack"
+    "build-dev": "webpack",
+    "build:prod": "set NODE_ENV=production& webpack",
+    "lint": "eslint \"src/**/*.js\"",
+    "lint:fix": "eslint \"src/**/*.js\" --fix"
   },
   "author": "Tengo Shamugia",
   "license": "ISC",
@@ -15,6 +18,11 @@
     "@babel/preset-env": "^7.19.4",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",

@@ -1,6 +1,6 @@
 "use strict";
-import "./copy.js";
 import axios from "axios";
+import "./copy.js";
 
 const baseURL = "https://api.shrtco.de/v2/shorten?url=";
 
@@ -50,8 +50,8 @@ const displayResult = store.map((item) => {
   <div class="shortened">
   <div class="shortened--link" id="origin" >${item.origin}</div>
   <div class="shortened--result">
-    <div class="generated-link">${item.generated}</div>
-    <button class="copy-btn">Copy</button>
+    <div class="generated-link" id="generated-link">${item.generated}</div>
+    <button class="copy-btn" id="copy-btn">Copy</button>
   </div>
   </div>
   `;
